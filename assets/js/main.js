@@ -87,22 +87,22 @@ function findCurrentNav(path) {
 function highlightActiveLink(link, isActive, variant) {
   if (!link) return;
   if (isActive) {
-    link.classList.add("text-[#A51C30]");
+    link.classList.add("text-[#23B8B9]");
     link.setAttribute("aria-current", "page");
     if (variant === "desktop") {
-      link.classList.add("border-b-[#A51C30]", "font-semibold");
+      link.classList.add("border-b-[#23B8B9]", "font-semibold");
     }
     if (variant === "sidebar") {
       link.classList.add(
-        "border-[#A51C30]",
+        "border-[#23B8B9]",
         "bg-white",
         "font-semibold",
-        "text-[#A51C30]",
+        "text-[#23B8B9]",
         "shadow-sm"
       );
     }
   } else {
-    link.classList.remove("text-[#A51C30]", "font-semibold", "border-b-[#A51C30]", "border-[#A51C30]", "bg-white", "shadow-sm");
+    link.classList.remove("text-[#23B8B9]", "font-semibold", "border-b-[#23B8B9]", "border-[#23B8B9]", "bg-white", "shadow-sm");
     link.removeAttribute("aria-current");
   }
 }
@@ -121,7 +121,7 @@ function buildTopNavigation(base, currentPath, activeSection) {
     anchor.href = relative;
     anchor.textContent = item.label;
     anchor.className =
-      "border-b-2 border-transparent px-4 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#1F2933] transition hover:text-[#A51C30] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A51C30] whitespace-nowrap";
+      "border-b-2 border-transparent px-4 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#1F2933] transition hover:text-[#23B8B9] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#23B8B9] whitespace-nowrap";
     highlightActiveLink(anchor, activeSection && activeSection.path === item.path, "desktop");
     topNav.appendChild(anchor);
 
@@ -132,7 +132,7 @@ function buildTopNavigation(base, currentPath, activeSection) {
     mobileLink.href = relative;
     mobileLink.textContent = item.label;
     mobileLink.className =
-      "flex items-center justify-between py-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#1A1F2B] transition hover:text-[#A51C30] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A51C30]";
+      "flex items-center justify-between py-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#1A1F2B] transition hover:text-[#23B8B9] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#23B8B9]";
     highlightActiveLink(mobileLink, activeSection && activeSection.path === item.path, "mobile");
     group.appendChild(mobileLink);
 
@@ -145,7 +145,7 @@ function buildTopNavigation(base, currentPath, activeSection) {
         childLink.href = toRelative(base, child.path);
         childLink.textContent = child.label;
         childLink.className =
-          "block rounded-md px-3 py-2 text-[0.8rem] font-medium uppercase tracking-[0.14em] text-[#374151] transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A51C30]";
+          "block rounded-md px-3 py-2 text-[0.8rem] font-medium uppercase tracking-[0.14em] text-[#374151] transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#23B8B9]";
         highlightActiveLink(childLink, currentPath === child.path, "mobile");
         li.appendChild(childLink);
         childList.appendChild(li);
@@ -186,7 +186,7 @@ function buildSidebar(base, section, currentPath) {
     link.href = toRelative(base, child.path);
     link.textContent = child.label;
     link.className =
-      "group flex items-center justify-between rounded-md border border-transparent px-4 py-3 text-[0.85rem] font-medium uppercase tracking-[0.14em] text-[#374151] transition hover:border-[#A51C30]/30 hover:text-[#A51C30] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A51C30]";
+      "group flex items-center justify-between rounded-md border border-transparent px-4 py-3 text-[0.85rem] font-medium uppercase tracking-[0.14em] text-[#374151] transition hover:border-[#23B8B9]/30 hover:text-[#23B8B9] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#23B8B9]";
     highlightActiveLink(link, currentPath === child.path, "sidebar");
     li.appendChild(link);
     sidebar.appendChild(li);
@@ -229,7 +229,7 @@ function buildBreadcrumbs(base, section, page) {
       const link = document.createElement("a");
       link.href = toRelative(base, crumb.path);
       link.textContent = crumb.label;
-      link.className = "text-[#A51C30] transition hover:text-[#7F1524] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A51C30]";
+      link.className = "text-[#23B8B9] transition hover:text-[#1C8F90] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#23B8B9]";
       li.appendChild(link);
       const separator = document.createElement("span");
       separator.textContent = "›";
@@ -403,7 +403,7 @@ function initFooterYear() {
       link.className = "inline-flex items-center gap-2 text-slate-300 transition hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white";
       const icon = document.createElement("span");
       icon.textContent = "→";
-      icon.className = "text-[#A51C30]";
+      icon.className = "text-[#23B8B9]";
       icon.setAttribute("aria-hidden", "true");
       link.appendChild(icon);
       li.appendChild(link);
@@ -530,7 +530,7 @@ function buildGlobalCta(base) {
   if (!container) return;
 
   container.innerHTML = `
-    <div class="rounded-3xl border border-[#A51C30]/20 bg-[#A51C30] px-6 py-10 text-white shadow-lg">
+    <div class="rounded-3xl border border-[#23B8B9]/20 bg-[#23B8B9] px-6 py-10 text-white shadow-lg">
       <div class="mx-auto flex max-w-4xl flex-col items-start gap-6 text-left md:flex-row md:items-center md:justify-between">
         <div class="space-y-2">
           <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/80">Take the next step</p>
@@ -538,8 +538,8 @@ function buildGlobalCta(base) {
           <p class="max-w-xl text-base text-white/90">Connect with our admissions counselors to explore scholarships, application timelines, and personalized campus visits for your family.</p>
         </div>
         <div class="flex flex-col items-stretch gap-3 sm:flex-row">
-          <a href="${toRelative(base, "/admission/sub2/")}" class="inline-flex items-center justify-center rounded-full border border-white/30 bg-[#A51C30] px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white shadow-sm transition hover:bg-[#8F1727] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white">Application Guide</a>
-          <a href="${toRelative(base, "/community/campus-life/")}" class="inline-flex items-center justify-center rounded-full border border-white/30 bg-[#A51C30] px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white shadow-sm transition hover:bg-[#8F1727] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white">Contact Admissions</a>
+          <a href="${toRelative(base, "/admission/sub2/")}" class="inline-flex items-center justify-center rounded-full border border-white/30 bg-[#23B8B9] px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white shadow-sm transition hover:bg-[#1FA6A7] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white">Application Guide</a>
+          <a href="${toRelative(base, "/community/campus-life/")}" class="inline-flex items-center justify-center rounded-full border border-white/30 bg-[#23B8B9] px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white shadow-sm transition hover:bg-[#1FA6A7] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white">Contact Admissions</a>
         </div>
       </div>
     </div>
@@ -798,8 +798,9 @@ async function initPage() {
   applyFavicon("icon");
   applyFavicon("shortcut icon");
 
-  const headerPath = `${base}partials/header.html`;
-  const footerPath = `${base}partials/footer.html`;
+  const partialVersion = "20260607-7";
+  const headerPath = `${base}partials/header.html?v=${partialVersion}`;
+  const footerPath = `${base}partials/footer.html?v=${partialVersion}`;
 
   await Promise.all([
     fetch(headerPath)
