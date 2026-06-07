@@ -1,0 +1,75 @@
+<header class="sticky top-0 z-40 border-b border-slate-200/80 bg-white/95 text-[#1F2933] shadow-sm backdrop-blur supports-[backdrop-filter]:bg-white/80" role="banner">
+  <div class="bg-[#7F1524] text-sm text-white">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-2">
+      <p class="font-medium">Enrollment for the upcoming academic year is now open.</p>
+      <a href="https://www.facebook.com/myyoungjiofficialpage" target="_blank" rel="noopener noreferrer" id="header-cta-shortcut" class="hidden rounded-full bg-[#A51C30] px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white shadow-sm transition hover:bg-[#8F1727] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white sm:inline-flex">YJIS FB</a>
+    </div>
+  </div>
+  <div class="mx-auto max-w-6xl px-4">
+    <div class="yj-header-main flex items-center justify-between gap-6 py-4">
+      <a id="site-logo-link" href="#" class="yj-logo-link flex items-center gap-3 text-left" aria-label="Youngji International School home">
+        <img
+          src="../images/gtcc_logo.png"
+          alt="Young ji International School logo"
+          class="yj-logo-mark h-14 w-14 object-contain"
+        />
+        <span class="hidden text-base font-semibold leading-tight text-[#1A1F2B] sm:block">
+          <span class="block whitespace-nowrap">Young ji International School</span>
+          <span class="block text-xs font-medium tracking-wide text-slate-500 whitespace-nowrap">Cavite, Republic of Philippines</span>
+        </span>
+      </a>
+      <nav id="top-nav" class="hidden items-center gap-1 lg:flex" aria-label="Primary navigation"></nav>
+      <div class="hidden items-center gap-3 lg:flex">
+        <div
+          id="google-translate-wrapper"
+          class="relative yj-translate-shell"
+          aria-label="Select a language to translate the page"
+        >
+          <label class="yj-translate-control">
+            <span class="sr-only">Select language</span>
+            <select data-translate-select aria-label="Select language"></select>
+          </label>
+          <div id="google_translate_element" class="yj-google-translate-host" aria-hidden="true"></div>
+        </div>
+      </div>
+      <button id="mobile-menu-toggle" class="flex items-center gap-2 rounded-full bg-[#A51C30] px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-white shadow-sm transition hover:bg-[#8F1727] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#A51C30] lg:hidden" aria-expanded="false" aria-controls="mobile-nav">Menu
+        <span aria-hidden="true">☰</span>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu-overlay" class="fixed inset-0 z-50 hidden" aria-hidden="true">
+    <div class="absolute inset-0 bg-slate-900/60" data-drawer-close="true"></div>
+    <div id="mobile-menu-drawer" class="relative ml-auto flex h-full w-80 max-w-[90%] flex-col overflow-hidden bg-white text-[#1F2933] shadow-2xl" tabindex="-1">
+      <div class="flex items-center justify-between border-b border-slate-200 px-4 py-3">
+        <span class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">Navigation</span>
+        <button id="mobile-menu-close" class="rounded-full bg-[#A51C30] px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-white shadow-sm transition hover:bg-[#8F1727] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#A51C30]">Close</button>
+      </div>
+      <div class="border-b border-slate-200 px-4 py-4">
+        <label class="yj-translate-control yj-translate-control--mobile">
+          <span class="sr-only">Select language</span>
+          <select data-translate-select aria-label="Select language"></select>
+        </label>
+        <div id="google_translate_element_mobile" class="yj-google-translate-host" aria-hidden="true"></div>
+      </div>
+      <nav id="mobile-nav" class="flex-1 overflow-y-auto px-4 py-6" aria-label="Mobile navigation"></nav>
+    </div>
+  </div>
+</header>
+<style>
+  .goog-te-gadget {
+    font-size: 0 !important;
+  }
+
+  .goog-te-gadget img,
+  .goog-logo-link {
+    display: none !important;
+  }
+
+  body .goog-te-banner-frame.skiptranslate {
+    display: none !important;
+  }
+
+  body {
+    top: 0 !important;
+  }
+</style>

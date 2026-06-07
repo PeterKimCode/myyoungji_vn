@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Young ji International School</title>
+  <meta name="description" content="Young ji International School in Philippines empowers global citizens through rigorous academics, compassionate community, and innovative learning pathways." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/tailwind.css?v=20260607" />
+  <link rel="stylesheet" href="assets/css/site.css?v=20260607-6" />
+  <style>
+    #hero-slider {
+      position: relative;
+    }
+
+    #hero-slider [data-hero-slide] {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      background-color: #0b0f19;
+      opacity: 0;
+      transition: opacity 700ms ease-in-out;
+      z-index: 0;
+    }
+
+    #hero-slider [data-hero-slide][data-active="true"] {
+      opacity: 1;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body data-depth="0" data-current-path="/" class="bg-[#F8F7F3] font-['Inter',_sans-serif] text-[#1F2933] antialiased">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-[#1A1F2B]">Skip to main content</a>
+  <div id="site-header"></div>
+  <main id="main-content" class="mx-auto max-w-6xl px-4 py-12">
+    <section class="yj-home-hero relative -mx-4 mb-12 overflow-hidden rounded-3xl bg-gradient-to-r from-[#F9FAFB] via-white to-[#E9ECF3] px-6 py-16 shadow-md md:flex md:items-center md:justify-between md:py-24 md:px-16 lg:-mx-10" role="banner">
+      <div class="yj-hero-copy max-w-3xl px-6 text-center md:w-1/2 md:px-10 md:text-left">
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#A51C30]">Young ji International School</p>
+        <h1 class="mt-4 font-['Source_Serif_Pro',_serif] text-4xl font-semibold tracking-tight text-[#111418] sm:text-5xl lg:text-6xl">Empowering Scholars with Purpose</h1>
+        <p class="mt-6 text-lg leading-relaxed text-[#1F2933]/80 md:text-xl">"From kindergarten through graduate school, we provide comprehensive growth support under one roof. Through intensive management of a minimal student body, we take responsibility for and design every student's life journey and future trajectory."</p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center md:justify-start">
+          <a href="admission/sub2/" class="inline-flex items-center justify-center rounded-full bg-[#A51C30] px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-white shadow-sm transition hover:bg-[#8F1727] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A51C30]">Apply Now</a>
+          <a href="community/campus-life/" class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-[#1F2933] shadow-sm transition hover:border-[#A51C30] hover:text-[#A51C30] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A51C30]">Contact Us</a>
+        </div>
+        <dl class="yj-hero-stats mt-8 grid grid-cols-3 gap-3 text-left">
+          <div>
+            <dt>Pathways</dt>
+            <dd>K-12+</dd>
+          </div>
+          <div>
+            <dt>Campus</dt>
+            <dd>Cavite</dd>
+          </div>
+          <div>
+            <dt>Support</dt>
+            <dd>1:1</dd>
+          </div>
+        </dl>
+      </div>
+      <div class="yj-hero-media mt-10 block md:mt-0 md:h-full md:w-1/2">
+        <div
+          id="hero-slider"
+          class="relative h-full w-full min-h-[320px] overflow-hidden rounded-2xl shadow-lg"
+          aria-roledescription="carousel"
+          aria-label="Young ji campus life highlights"
+          tabindex="0"
+        >
+          <span class="sr-only" data-hero-status>Slide 1 of 5</span>
+          <button
+            type="button"
+            class="group absolute left-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-white/80 p-2 text-[#1F2933] shadow transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A51C30]"
+            data-hero-prev
+            aria-label="Previous slide"
+          >
+            <span aria-hidden="true" class="block text-lg leading-none">‹</span>
+          </button>
+          <button
+            type="button"
+            class="group absolute right-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-white/80 p-2 text-[#1F2933] shadow transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A51C30]"
+            data-hero-next
+            aria-label="Next slide"
+          >
+            <span aria-hidden="true" class="block text-lg leading-none">›</span>
+          </button>
+          <div class="absolute inset-x-0 bottom-4 z-20 flex items-center justify-center gap-2" data-hero-indicators></div>
+          <img
+            src="images/yjis2.jpg"
+            alt="Youngji International School campus life"
+            class="absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out"
+            data-hero-slide
+            data-active="true"
+            loading="eager"
+          />
+          <img
+            src="images/56.jpg"
+            alt="Youngji International School campus life"
+            class="absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out"
+            data-hero-slide
+            data-active="false"
+            loading="lazy"
+            aria-hidden="true"
+          />
+           <img
+            src="images/d7e6b17c-8129-4881-8d0a-8cf6ebd9018e.jpg"
+            alt="Youngji International School campus life"
+            class="absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out"
+            data-hero-slide
+            data-active="false"
+            loading="lazy"
+            aria-hidden="true"
+          />              
+          
+          <img
+            src="images/89.jpg"
+            alt="Youngji International School campus life"
+            class="absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out"
+            data-hero-slide
+            data-active="false"
+            loading="lazy"
+            aria-hidden="true"
+          />
+          <img
+            src="images/67.jpg"
+            alt="Youngji International School campus life"
+            class="absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out"
+            data-hero-slide
+            data-active="false"
+            loading="lazy"
+            aria-hidden="true"
+          />
+          <img
+            src="images/99.jpg"
+            alt="Youngji International School campus life"
+            class="absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out"
+            data-hero-slide
+            data-active="false"
+            loading="lazy"
+            aria-hidden="true"
+          />
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+        </div>
+      </div>
+    </section>
+    <nav id="breadcrumbs" class="mb-8" aria-label="Breadcrumb"></nav>
+    <section class="rounded-3xl border border-[#A51C30]/15 bg-white px-8 py-12 shadow-sm">
+      <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#A51C30]">Youngji International School</p>
+      <h2 class="mt-3 font-['Source_Serif_Pro',_serif] text-4xl font-semibold tracking-tight text-[#1A1F2B] sm:text-5xl">Welcome to Youngji International School</h2>
+      <p class="mt-4 max-w-2xl text-lg leading-relaxed text-slate-600">Nurturing global citizens through compassionate learning, research-informed teaching, and a vibrant campus culture in the heart of CAVITE.</p>
+    </section>
+    <div class="mt-10 grid gap-10 lg:grid-cols-[280px,1fr]">
+      <aside id="sidebar" class="hidden lg:block lg:sticky lg:top-32">
+        <div class="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm">
+          <h2 class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">In this section</h2>
+          <nav aria-label="Section navigation" class="mt-4">
+            <ul id="sidebar-nav" class="space-y-2"></ul>
+          </nav>
+        </div>
+      </aside>
+      <section class="space-y-10">
+        <article class="rounded-3xl border border-slate-200/60 bg-white p-8 shadow-sm">
+          <div class="space-y-6 text-base leading-relaxed text-slate-700">
+            <p>Youngji International School provides a holistic learning environment where students are encouraged to lead with curiosity, integrity, and empathy. Our vibrant community celebrates diversity and prepares learners for the opportunities of tomorrow.</p>
+            <p>Explore our programs, meet our dedicated faculty, and discover how our collaborative culture supports students from preschool to senior high school. We invite families to become part of our story.</p>
+            <ul class="list-disc space-y-2 pl-6 text-slate-700">
+              <li>Comprehensive academic pathways from early childhood to pre-college.</li>
+              <li>Experienced educators and counselors supporting every learner.</li>
+              <li>Inclusive community events and service projects throughout the year.</li>
+            </ul>
+          </div>
+        </article>
+        <aside id="sidebar-mobile" class="mt-8 hidden border-t border-slate-200/80 pt-8 lg:hidden">
+          <h2 class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">In this section</h2>
+          <nav aria-label="Section navigation" class="mt-4">
+            <ul id="sidebar-nav-mobile" class="space-y-2"></ul>
+          </nav>
+        </aside>
+      </section>
+    </div>
+    <section aria-labelledby="programs-heading" class="mt-16 rounded-3xl border border-slate-200/60 bg-white p-10 shadow-sm">
+      <div class="max-w-3xl">
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#A51C30]">Explore Our Programs</p>
+        <h2 id="programs-heading" class="mt-3 font-['Source_Serif_Pro',_serif] text-3xl font-semibold text-[#111418] sm:text-4xl">Guided pathways for every learner</h2>
+        <p class="mt-4 text-lg leading-relaxed text-slate-600">Choose the program that best suits your child's goals and connect with our team to take the next step.</p>
+      </div>
+      <div class="mt-10 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-[#F9FAFB] p-8 text-left shadow-sm">
+          <div>
+            <h3 class="font-['Source_Serif_Pro',_serif] text-2xl text-[#111418]">Admission</h3>
+            <p class="mt-4 text-base leading-relaxed text-slate-600">Understand application timelines, requirements, and scholarship opportunities tailored to your family.</p>
+          </div>
+          <a href="admission/index.html" class="mt-8 inline-flex items-center justify-center rounded-md bg-[#A51C30] px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-[#8F1727] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#A51C30]" aria-label="Start your admission journey">Apply Now</a>
+        </div>
+        <div class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-[#F9FAFB] p-8 text-left shadow-sm">
+          <div>
+            <h3 class="font-['Source_Serif_Pro',_serif] text-2xl text-[#111418]">Basic Education</h3>
+            <p class="mt-4 text-base leading-relaxed text-slate-600">Explore foundational programs from preschool to senior high school, enriched with global perspectives.</p>
+          </div>
+          <a href="basic-education/index.html" class="mt-8 inline-flex items-center justify-center rounded-md bg-[#A51C30] px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-[#8F1727] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#A51C30]" aria-label="Request the basic education curriculum">View Curriculum</a>
+        </div>
+        <div class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-[#F9FAFB] p-8 text-left shadow-sm">
+          <div>
+            <h3 class="font-['Source_Serif_Pro',_serif] text-2xl text-[#111418]">e-Education</h3>
+            <p class="mt-4 text-base leading-relaxed text-slate-600">Discover flexible digital learning pathways supported by expert mentors and immersive technology.</p>
+          </div>
+          <a href="e-education/index.html" class="mt-8 inline-flex items-center justify-center rounded-md bg-[#A51C30] px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-[#8F1727] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#A51C30]" aria-label="Explore e-education programs">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <section aria-labelledby="highlights-heading" class="mt-16 rounded-3xl border border-slate-200/60 bg-white p-10 shadow-sm">
+      <div class="max-w-2xl">
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#A51C30]">School Highlights</p>
+        <h2 id="highlights-heading" class="mt-3 font-['Source_Serif_Pro',_serif] text-3xl font-semibold text-[#111418] sm:text-4xl">Stories from our vibrant community</h2>
+        <p class="mt-4 text-lg leading-relaxed text-slate-600">Stay informed with the latest news, events, and innovations shaping Youngji International School.</p>
+      </div>
+      <div class="mt-10 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <article role="link" tabindex="0" aria-label="2024 Global Scholars Summit Recap" onclick="window.location.href='/myyoungji_new/community/notification/'" onkeydown="if(event.key==='Enter' || event.key===' '){event.preventDefault();window.location.href='/myyoungji_new/community/notification/';}" class="group flex h-full cursor-pointer flex-col justify-between rounded-2xl bg-white p-8 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg focus-within:-translate-y-1 focus-within:shadow-lg">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-[#A51C30]/80">Apr 12, 2025</p>
+            <h3 class="mt-3 font-['Source_Serif_Pro',_serif] text-2xl text-[#111418]">2025 Global Scholars Summit Recap</h3>
+            <p class="mt-4 text-base leading-relaxed text-slate-600">Student leaders shared research on sustainability and social entrepreneurship alongside global partner schools.</p>
+          </div>
+          <span class="mt-6 inline-flex items-center text-sm font-semibold text-[#A51C30] group-hover:underline">See Details</span>
+        </article>
+        <article role="link" tabindex="0" aria-label="New Youngji Fellows Scholarship" onclick="window.location.href='/myyoungji_new/community/notification/'" onkeydown="if(event.key==='Enter' || event.key===' '){event.preventDefault();window.location.href='/myyoungji_new/community/notification/';}" class="group flex h-full cursor-pointer flex-col justify-between rounded-2xl bg-white p-8 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg focus-within:-translate-y-1 focus-within:shadow-lg">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-[#A51C30]/80">Scholarship</p>
+            <h3 class="mt-3 font-['Source_Serif_Pro',_serif] text-2xl text-[#111418]">Introducing the Youngji Fellows Scholarship</h3>
+            <p class="mt-4 text-base leading-relaxed text-slate-600">Merit-based awards now extend to interdisciplinary research and service-learning portfolios.</p>
+          </div>
+          <span class="mt-6 inline-flex items-center text-sm font-semibold text-[#A51C30] group-hover:underline">See Details</span>
+        </article>
+        <article role="link" tabindex="0" aria-label="Family Weekend and Campus Tour" onclick="window.location.href='/myyoungji_new/community/notification/'" onkeydown="if(event.key==='Enter' || event.key===' '){event.preventDefault();window.location.href='/myyoungji_new/community/notification/';}" class="group flex h-full cursor-pointer flex-col justify-between rounded-2xl bg-white p-8 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg focus-within:-translate-y-1 focus-within:shadow-lg">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-[#A51C30]/80">Community</p>
+            <h3 class="mt-3 font-['Source_Serif_Pro',_serif] text-2xl text-[#111418]">Family Weekend &amp; Campus Tour</h3>
+            <p class="mt-4 text-base leading-relaxed text-slate-600">Join students, faculty, and alumni for a weekend of workshops, performances, and guided campus tours.</p>
+          </div>
+          <span class="mt-6 inline-flex items-center text-sm font-semibold text-[#A51C30] group-hover:underline">See Details</span>
+        </article>
+      </div>
+    </section>
+    <section id="global-cta" class="mt-16"></section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
