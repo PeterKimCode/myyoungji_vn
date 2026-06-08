@@ -52,8 +52,6 @@ const NAV = [
       { label: "SCHOOL LIFE", path: "/community/news-2/" },
       { label: "News / Notification", path: "/community/notification/" },
       { label: "Contact Info", path: "/community/campus-life/" },
-      { label: "Branch school of YJIS", path: "/community/extension-class-center/" },
-      { label: "Contact Info & Search for student", path: "/community/search-for-student/" },
     ],
   },
 ];
