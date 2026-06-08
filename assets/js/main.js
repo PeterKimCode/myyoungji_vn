@@ -37,8 +37,6 @@ const NAV = [
     label: "e-Education",
     path: "/e-education/",
     children: [
-      { label: "Director’s message", path: "/e-education/online-school/" },
-      { label: "Extension YJIS", path: "/e-education/online-school-k-12/" },
       { label: "Accreditation", path: "/e-education/online-college/" },
       { label: "Extension Class Coordinator", path: "/new-page-1/" },
       { label: "Extension Class Teacher", path: "/new-page-2/" },
