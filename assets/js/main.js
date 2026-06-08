@@ -831,7 +831,7 @@ async function initPage() {
 
   const headerShortcut = document.getElementById("header-cta-shortcut");
   if (headerShortcut) {
-    headerShortcut.href = "https://www.facebook.com/myyoungjiofficialpage";
+    headerShortcut.href = "https://www.facebook.com/miakiddieschool";
     headerShortcut.target = "_blank";
     headerShortcut.rel = "noopener noreferrer";
   }
