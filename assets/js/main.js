@@ -829,7 +829,7 @@ async function initPage() {
 
   const headerShortcut = document.getElementById("header-cta-shortcut");
   if (headerShortcut) {
-    headerShortcut.href = "https://www.facebook.com/miakiddieschool";
+    headerShortcut.href = "https://www.facebook.com/people/YoungJi-International-Vietnam/61590524320891/";
     headerShortcut.target = "_blank";
     headerShortcut.rel = "noopener noreferrer";
   }
